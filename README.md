@@ -8,7 +8,7 @@ This repo contains preseed files and scripts used to install the Coderdojo (Sint
 * preseed/xenial.preseed - preseed file to install Ubuntu 16.04 with SSH enabled
 * preseed/postinstall.sh - script where most coderdojo specific software is installed
 * pxelinux.cfg/default - pxe boot for preseed example
-* shortcuts/ - preconfigured desktop shortcuts for the installed software (just to avoid to much clicking around :))
+* shortcuts/ - preconfigured desktop shortcuts for the installed software (just to avoid too much clicking around :))
 * preseed/99-sysctl-disable-ivp6.conf - systctl config to disable ipv6, just because I test this on Virtualbox where ipv6 doesn't work properly for me on the bridged adapter
 
 ## Usage
