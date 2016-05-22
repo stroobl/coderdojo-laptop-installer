@@ -1,6 +1,6 @@
-# coderdojo-laptop-installer
+# Coderdojo laptop installer
 
-This repo contains preseed files and scripts used to install the Coderdojo (Sint-Agatha-Berchem) laptops. You won't be able to use them without advanced Linux knowledge, but I thought it could be useful to share some ideas for other dojos with the same needs... Suggestions and improvements are welcome too of course. :-)
+This repo contains preseed files and scripts used to install the Coderdojo (Sint-Agatha-Berchem) laptops with Ubuntu 16.04. You won't be able to use them without advanced Linux knowledge, but I thought it could be useful to share some ideas for other dojos with the same needs... Suggestions and improvements are welcome too of course. :-)
 
 
 ## Contents
