@@ -22,10 +22,10 @@ This repo contains preseed files and scripts used to install the Coderdojo (Sint
 
 ## Todo
 
-* A way to get rid of the clickety-click installation for Adobe Air and Scratch offline would be great. Once the installation is done, you have to run the commandos below (in an X session):
+* A way to get rid of the clickety-click installation for Adobe Air and Scratch offline would be great. Once the installation is done, you have to run the commandos below (in an X session with the admin user):
 ```
-$ sudo $WHERE/AdobeAIRInstaller.bin
-$ sudo /etc/alternatives/airappinstaller $WHERE/install-scratch-446.air
+$ sudo /home/dojoadmin/AdobeAIRInstaller.bin
+$ sudo /etc/alternatives/airappinstaller /home/dojoadmin/install-scratch-446.air
 ```
 
 
