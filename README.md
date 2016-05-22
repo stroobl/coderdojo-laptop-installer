@@ -11,6 +11,23 @@ This repo contains preseed files and scripts used to install the Coderdojo (Sint
 * shortcuts/ - preconfigured desktop shortcuts for the installed software (just to avoid too much clicking around :))
 * preseed/99-sysctl-disable-ivp6.conf - systctl config to disable ipv6, just because I test this on Virtualbox where ipv6 doesn't work properly for me on the bridged adapter
 
+## Results
+
+### pxe + preseed
+* All existing system data on sda will BE ERASED
+* Partitioning: / 35GB, 4GB swap, everything else: /home
+* Xubuntu desktop installed + sshd and fail2ban
+* call postinstall.sh for other configuration
+
+### postinstall.sh
+* Admin user: dojoadmin (passwordless sudo and ssh keys enabled in postinstall.sh)
+* Normal user: coderdojo with password coderdojo (configured in postinstall.sh)
+* Wireless connections added
+* Google chrome installed
+* All preparations for Scratch2 offline installations (Adobe Air and Scratch GUI install not included for now)
+* Scratch 4 Arduino installed
+* Desktop shortcuts for custom apps in both admin and normal user
+
 ## Usage
 
 * You need a pxe boot server to host the ubuntu netboot image. The dhcp/tftp setup is out of scope (Google!).
