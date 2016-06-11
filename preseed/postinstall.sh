@@ -3,7 +3,7 @@
 # dojoadmin user + add ssh keys
 WHO='dojoadmin'
 WHERE="/home/$WHO"
-HTTPHOST='10.10.10.105'
+HTTPHOST='10.10.100.254'
 $SSID1='Coderdojo1'
 $SSID2='Coderdojo2'
 
@@ -75,6 +75,12 @@ dpkg -i $WHERE/S4A16.deb
 wget --no-parent -nd -r -A desktop http://$HTTPHOST/shortcuts/ -P /home/$WHO/Desktop
 chown -R $WHO:$WHO /home/$WHO/Desktop/*.desktop
 chmod +x /home/$WHO/Desktop/*.desktop
+
+# Autologin for non admin user
+##############################
+mkdir /etc/lightdm/lightdm.conf.d
+cd /etc/lightdm/lightdm.conf.d
+wget http://$HTTPHOST/preseed/50-coderdojo.conf
 
 # coderdojo user
 wget --no-parent -nd -r -A desktop http://$HTTPHOST/shortcuts/ -P /home/coderdojo/Desktop
