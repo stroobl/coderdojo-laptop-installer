@@ -447,4 +447,4 @@ d-i debian-installer/exit/poweroff boolean true
 #  Although preseeding the network configuration is normally not possible when using network preseeding (using “preseed/url”), you can use the following hack to work around that
 preseed/run kill-all-dhcp; netcfg
 
-d-i preseed/late_command string chroot /target sh -c "/usr/bin/curl -o /tmp/postinstall.sh http://10.10.10.105/preseed/postinstall.sh && /bin/sh -x /tmp/postinstall.sh"
+d-i preseed/late_command string chroot /target sh -c "/usr/bin/curl -o /tmp/postinstall.sh http://10.10.100.254/preseed/postinstall.sh && /bin/sh -x /tmp/postinstall.sh"
