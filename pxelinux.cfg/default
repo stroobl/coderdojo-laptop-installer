@@ -12,4 +12,4 @@ LABEL local
 label coderdojo
   MENU LABEL Install Coderdojo Xubuntu
   KERNEL /ubuntu-installer/amd64/linux
-  APPEND initrd=/ubuntu-installer/amd64/initrd.gz url=http://10.10.100.254/preseed/xenial.preseed auto=true priority=critical DEBCONF_DEBUG=5 locale=en_US.UTF-8 console-setup/layoutcode=be-latin1 domain=local hostname=cdrdj1082 ipv6.disable=1 --
+  APPEND initrd=/ubuntu-installer/amd64/initrd.gz url=http://10.10.100.254/preseed/xenial.preseed auto=true priority=critical DEBCONF_DEBUG=5 locale=en_US.UTF-8 console-setup/layoutcode=be-latin1 domain=local hostname=cdrdj1082 net.ifnames=0 ipv6.disable=1 --
