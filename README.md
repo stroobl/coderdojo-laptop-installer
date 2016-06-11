@@ -33,7 +33,7 @@ This repo contains preseed files and scripts used to install the Coderdojo (Sint
 * You need a pxe boot server to host the ubuntu netboot image. The dhcp/tftp setup is out of scope (Google!).
 * extract the ubuntu 16.04 netboot in your tftp root. Get it on: http://cdimage.ubuntu.com/netboot/ (we ignore most of the default ubuntu pxe config later, but it's the easiest way to get all files in place)
 * copy pxelinux.cfg/default to your pxelinux.cfg/default in the tftp root and make sure vesamenu.c32 is in the root too
-* In the example scripts, all files are hosted on 10.10.10.105. Make sure to replace it with your own IP where necessary (at the end of the preseed file and on top of the postinstall.sh)
+* In the example scripts, all files are hosted on 10.10.100.254. Make sure to replace it with your own IP where necessary (at the end of the preseed file and on top of the postinstall.sh)
 * Make sure you have a webserver on the above IP and put the preseed/ and shortcuts/ directory in your documentroot
 * Adapt the preseed/xenial.preseed to your needs - AT LEAST SET THE DOJOADMIN PASSWORD!
 
