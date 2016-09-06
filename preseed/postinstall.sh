@@ -52,16 +52,16 @@ ln -sf /usr/lib/x86_64-linux-gnu/libgnome-keyring.so.0 /usr/lib/libgnome-keyring
 ln -sf /usr/lib/x86_64-linux-gnu/libgnome-keyring.so.0.2.0 /usr/lib/libgnome-keyring.so.0.2.0
 
 wget -O $WHERE/AdobeAIRInstaller.bin http://airdownload.adobe.com/air/lin/download/2.6/AdobeAIRInstaller.bin
-wget -O $WHERE/install-scratch-446.air https://scratch.mit.edu/scratchr2/static/sa/Scratch-446.air
+wget -O $WHERE/install-scratch-448.air https://scratch.mit.edu/scratchr2/static/sa/Scratch-448.air
 
 # make executable
 chmod +x $WHERE/AdobeAIRInstaller.bin
-chmod +x $WHERE/install-scratch-446.air
+chmod +x $WHERE/install-scratch-448.air
 
 # MANUAL STEPS :-(
 # Now in an X session with the dojoadmin user run
 # sudo $WHERE/AdobeAIRInstaller.bin 
-# sudo /etc/alternatives/airappinstaller $WHERE/install-scratch-446.air
+# sudo /etc/alternatives/airappinstaller $WHERE/install-scratch-448.air
 
 # install scratch 4 arduino
 ###########################
